@@ -1,0 +1,31 @@
+
+{% load static %}
+{% block content %}
+    <style>
+        .top-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+        }
+    </style>
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ user.profile.image.url }}" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Me</h5>
+                        <h1>{{ user.username }}</h1>
+                    </div>
+                    </a>
+                    <a href="http://127.0.0.1:8000/" class="top-right">Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
