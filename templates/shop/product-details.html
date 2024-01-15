@@ -1,6 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+{% load static %}
+{% block content %}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,16 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico'%}/">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="../static/css/meanmenu.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'  %} ">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 </head>
 
 <body>
+
+
+</body>
 
         <!-- Header -->
         <header class="header">
@@ -63,7 +65,7 @@
                                </div>
                                 <div class="logo--header__middle">
                                     <div class="logo">
-                                        <a class="logo__link" href="index.html"><img src="../static/img/logo/h1__logo.png" alt=""></a>
+                                        <a class="logo__link" href="../index.html"><img src="../../static/img/logo/h1__logo.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="cart--header__middle cart--header__three">
@@ -71,48 +73,11 @@
                                         <ul class="list-inline">
                                             <li><a href="#"><i class="fal fa-user-plus"></i></a></li>
                                             <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                            <li><a class="mini__cart--link" href="#"><i class="fal fa-bags-shopping"><span class="cart__count">3</span></i><span class="cart__amount">$ 3550</span></a></li>
+                                            <li><a class="mini__cart--link" href="#"><i class="fal fa-bags-shopping"><span class="cart__count">0</span></i><span class="cart__amount">$ 0</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="mini__cart--box">
-                                        <ul>
-                                            <li class="mb-20">
-                                                <div class="cart-image">
-                                                    <a href="#"><img src="../static/img/allproducts/cart__thumb__1.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart-text">
-                                                    <a href="#" class="title f-400 cod__black-color">Pink Jacket</a>
-                                                    <span class="cart-price f-400 dusty__gray-color">2 x <span class="price f-800 cod__black-color">$ 78.00</span></span>
-                                                </div>
-                                                <div class="del-button">
-                                                    <a href="#"><i class="icofont-close-line"></i></a>
-                                                </div>
-                                            </li>
-                                            <li class="mb-20">
-                                                <div class="cart-image">
-                                                    <a href="#"><img src="../static/img/allproducts/cart__thumb__2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart-text">
-                                                    <a href="#" class="title f-400 cod__black-color">Silk Glows</a>
-                                                    <span class="cart-price f-400 dusty__gray-color">2 x <span class="price f-800 cod__black-color">$ 78.00</span></span>
-                                                </div>
-                                                <div class="del-button">
-                                                    <a href="#"><i class="icofont-close-line"></i></a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="total-text d-flex justify-content-between">
-                                                    <span class="f-800 cod__black-color">Total Bag </span>
-                                                    <span class="f-800 cod__black-color">$ 99.00</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex justify-content-between">
-                                                    <a href="#" class="checkout">Checkout</a>
-                                                    <a href="#" class="viewcart">View Cart</a>
-                                                </div>
-                                            </li>
-                                        </ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -128,147 +93,147 @@
                                 <nav id="mobile-menu">
 <ul>
     <li class="dropdown-icon">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <ul class="submenu">
             <li>
-                <a href="index.html">Home Furniture</a>
+                <a href="../index.html">Home Furniture</a>
             </li>
             <li>
-                <a href="index-2.html">Home Electronics</a>
+                <a href="../index-2.html">Home Electronics</a>
             </li>
             <li>
-                <a href="index-3.html">Home Fashion</a>
+                <a href="../index-3.html">Home Fashion</a>
             </li>
         </ul>
     </li>
     <li>
-        <a href="about.html">About Us</a>
+        <a href="../about.html">About Us</a>
     </li>
     <li class="mega-menu static dropdown-icon">
-        <a href="home.html">Shop</a>
+        <a href="../home.html">Shop</a>
         <ul class="submenu mega-full">
             <li>
-                <a href="home.html">Category 01</a>
+                <a href="../home.html">Category 01</a>
                 <ul class="submenu  level-1">
                     <li>
-                        <a href="home.html">Furniture</a>
+                        <a href="../home.html">Furniture</a>
                     </li>
                     <li>
-                        <a href="home.html">Fasion</a>
+                        <a href="../home.html">Fasion</a>
                     </li>
                     <li>
-                        <a href="home.html">Bags</a>
+                        <a href="../home.html">Bags</a>
                     </li>
                     <li>
-                        <a href="home.html">Lather</a>
+                        <a href="../home.html">Lather</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="home.html">Category 02</a>
+                <a href="../home.html">Category 02</a>
                 <ul class="submenu  level-1">
                     <li>
-                        <a href="home.html">Electronics</a>
+                        <a href="../home.html">Electronics</a>
                     </li>
                     <li>
-                        <a href="home.html">Chair</a>
+                        <a href="../home.html">Chair</a>
                     </li>
                     <li>
-                        <a href="home.html">Table</a>
+                        <a href="../home.html">Table</a>
                     </li>
                     <li>
-                        <a href="home.html">Book</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="home.html">Category 03</a>
-                <ul class="submenu">
-                    <li>
-                        <a href="home.html">Clock</a>
-                    </li>
-                    <li>
-                        <a href="home.html">Watch</a>
-                    </li>
-                    <li>
-                        <a href="home.html">Mobile</a>
-                    </li>
-                    <li>
-                        <a href="home.html">sunglass</a>
+                        <a href="../home.html">Book</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="home.html">Category 04</a>
+                <a href="../home.html">Category 03</a>
                 <ul class="submenu">
                     <li>
-                        <a href="home.html">Chair</a>
+                        <a href="../home.html">Clock</a>
                     </li>
                     <li>
-                        <a href="home.html">Lather</a>
+                        <a href="../home.html">Watch</a>
                     </li>
                     <li>
-                        <a href="home.html">Table</a>
+                        <a href="../home.html">Mobile</a>
                     </li>
                     <li>
-                        <a href="home.html">Clock</a>
+                        <a href="../home.html">sunglass</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../home.html">Category 04</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../home.html">Chair</a>
+                    </li>
+                    <li>
+                        <a href="../home.html">Lather</a>
+                    </li>
+                    <li>
+                        <a href="../home.html">Table</a>
+                    </li>
+                    <li>
+                        <a href="../home.html">Clock</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </li>
     <li>
-        <a href="home.html">Furniture <span class="offer2 new">New</span></a>
+        <a href="../home.html">Furniture <span class="offer2 new">New</span></a>
     </li>
     <li class="dropdown-icon">
         <a href="#">Pages</a>
         <ul class="submenu">
             <li>
-                <a href="about.html">About</a>
+                <a href="../about.html">About</a>
             </li>
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="../product-details3.html">Product Details</a>
             </li>
             <li>
                 <a href="product-details.html">Product Details</a>
             </li>
             <li>
-                <a href="product-details2.html">Product Details</a>
+                <a href="register.html">Register</a>
             </li>
             <li>
-                <a href="shop/register.html">Register</a>
+                <a href="../shop-cat-three.html">Shop Category 03</a>
             </li>
             <li>
-                <a href="shop-cat-three.html">Shop Category 03</a>
+                <a href="../shop-collection.html">Shop Category 01</a>
             </li>
             <li>
-                <a href="shop-collection.html">Shop Category 01</a>
+                <a href="../shop-left-sidebar.html">Shop Left Sidebar</a>
             </li>
             <li>
-                <a href="shop-left-sidebar.html">Shop Left Sidebar</a>
-            </li>
-            <li>
-                <a href="shop-right-sidebar.html">Shop Right Sidebar</a>
+                <a href="../shop-right-sidebar.html">Shop Right Sidebar</a>
             </li>
         </ul>
     </li>
     <li>
-        <a href="home.html">Top Product</a>
+        <a href="../home.html">Top Product</a>
     </li>
     <li>
-        <a href="home.html">Trending <span class="offer2">Hot</span></a>
+        <a href="../home.html">Trending <span class="offer2">Hot</span></a>
     </li>
     <li class="dropdown-icon">
-        <a href="shop/blog.html">Blog</a>
+        <a href="blog.html">Blog</a>
         <ul class="submenu  level-1">
             <li>
-                <a href="shop/blog.html">Blog</a>
+                <a href="blog.html">Blog</a>
             </li>
             <li>
-                <a href="blog-sidebar.html">Blog Sidebar</a>
+                <a href="../blog-sidebar.html">Blog Sidebar</a>
             </li>
             <li>
-                <a href="shop/blog-details.html">Blog Details</a>
+                <a href="blog-details.html">Blog Details</a>
             </li>
         </ul>
     </li>
@@ -298,9 +263,9 @@
                        <div class="shop-bred pt-35 pb-35">
                             <nav aria-label="breadcrumb">
                                <ol class="breadcrumb">
-                                   <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
-                                   <li class="breadcrumb-item"><a href="index-2.html">Phones & Tablet</a></li>
-                                   <li class="breadcrumb-item"><a href="index-2.html">Headphone</a></li>
+                                   <li class="breadcrumb-item"><a href="../index-2.html">Home</a></li>
+                                   <li class="breadcrumb-item"><a href="../index-2.html">Phones & Tablet</a></li>
+                                   <li class="breadcrumb-item"><a href="../index-2.html">Headphone</a></li>
                                    <li class="breadcrumb-item active" aria-current="page">Ultra Wireless 550 Headphone With Bluetooth.</li>
                                </ol>
                            </nav>
@@ -310,8 +275,8 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 order-md-1 order-3">
                         <div class="pro-content pro-content-two">
-                            <span>HEADPHONES</span>
-                            <h5 class="title">Ultra Wireless 550 Headphone With A35 Bluetooth</h5>
+                            <span>Name</span>
+                            <h5 class="title">{{ object.name }}</h5>
                             <div class="pro-rating pb-40">
                                 <a href="#" class="active"><i class="fas fa-star"></i></a>
                                 <a href="#" class="active"><i class="fas fa-star"></i></a>
@@ -321,19 +286,17 @@
                                 <a href="#" class="review">(2 customer reviews)</a>
                             </div>
                             <div class="pro-social mb-45">
-                                <a href="#"><img src="../static/img/payment/pro-details-social.jpg" class="img-fluid" alt=""></a>
+                                <a href="#"><img src="../../static/img/payment/pro-details-social.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="about-pro">
                                 <ul class="mb-40">
-                                    <li>4.5 inch HD Touch Screen (1280 x 720)</li>
-                                    <li>Android 4.4 KitKat OS</li>
-                                    <li>1.4 GHz Quad Core™ Processor</li>
-                                    <li>20 MP front and 28 megapixel CMOS rear camera</li>
-                                    <li>Sed eiusmod tempor incididunt</li>
+
+
+                                    <li>Brand: {{ object.brand}}</li>
+                                    <li>Model: {{object.model }}</li>
+
                                 </ul>
-                                <p>Lorem Ipsum is simply dummy texting of the printings and
-                                    amet industry. Simply Dummy has been industry standard
-                                    of the printing and typesetting.</p>
+                                <p>Description: {{ object.description }}.</p>
                             </div>
                             <div class="pro-code pt-25">
                                 <ul>
@@ -346,49 +309,56 @@
                     <div class="col-lg-5 col-md-6 order-md-2 order-1">
                         <div class="pro-img">
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home5" role="tabpanel" aria-labelledby="home-tab5"><img src="../static/img/allproducts/pro-details.jpg" class="img-fluid" alt=""></div>
+                                <div class="tab-pane fade show active" id="home5" role="tabpanel" aria-labelledby="home-tab5"><img src="../../static/img/allproducts/pro-details.jpg" class="img-fluid" alt=""></div>
 
                                 <div class="tab-pane fade" id="profile5" role="tabpanel" aria-labelledby="profile-tab5">
-                                    <img src="../static/img/allproducts/pro-details.jpg" class="img-fluid" alt="">
+                                    <img src="../../static/img/allproducts/pro-details.jpg" class="img-fluid" alt="">
                                 </div>
 
                                 <div class="tab-pane fade" id="contact5" role="tabpanel" aria-labelledby="contact-tab5">
-                                    <img src="../static/img/allproducts/pro-details.jpg" class="img-fluid" alt="">
+                                    <img src="../../static/img/allproducts/pro-details.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <ul class="nav" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab5" data-toggle="tab" href="#home5" role="tab" aria-controls="home5" aria-selected="true">
-                                        <img src="../static/img/allproducts/pro-details-small-1.jpg" class="img-fluid" alt="">
+                                        <img src="../../static/img/allproducts/pro-details-small-1.jpg" class="img-fluid" alt="">
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="profile-tab5" data-toggle="tab" href="#profile5" role="tab" aria-controls="profile5" aria-selected="false">
-                                        <img src="../static/img/allproducts/pro-details-small-2.jpg" class="img-fluid" alt="">
+                                        <img src="../../static/img/allproducts/pro-details-small-2.jpg" class="img-fluid" alt="">
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="contact-tab5" data-toggle="tab" href="#contact5" role="tab" aria-controls="contact5" aria-selected="false">
-                                        <img src="../static/img/allproducts/pro-details-small-3.jpg" class="img-fluid" alt="">
+                                        <img src="../../static/img/allproducts/pro-details-small-3.jpg" class="img-fluid" alt="">
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 order-md-3 order-2">
+
                         <div class="cart-wrapper">
+
                             <div class="cart-title">
                                 <h6>Availability: <span>In Stock</span></h6>
                             </div>
                             <div class="price mt-15 mb-20">
-                               <span>$3,200.55</span>
-                                <h4>$2,299.00</h4>
+                               <span>PRICE:</span>
+                                <h4>${{ object.price }}</h4>
                             </div>
                             <form action="#">
+                                <div class="field">
+                                    <label>Have: {{ object.quantity }} pcs</label>
+
+                                </div>
                                 <div class="field">
                                     <label>Quantity:</label>
                                     <input type="number">
                                 </div>
+
                                 <div class="field">
                                     <label>Color:</label>
                                     <select name="select">
@@ -401,7 +371,7 @@
                                 </div>
                             </form>
                             <a href="#" class="cart-button">Add To Cart</a>
-                            <a href="#" class="buy-button">Buy Now</a>
+                            <a href="{% url 'blog-pay' object.pk %}" class="buy-button">Buy Now</a>
                             <div class="last pt-15">
                                 <a href="#">Add To Wishlist</a>
                                 <a href="#">Compare</a>
@@ -450,78 +420,40 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade show active" id="profile11" role="tabpanel" aria-labelledby="profile-tab11">
-                                    <div class="desc-content mt-60">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Perfactly Done</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec
-                                                    massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpUt id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum meta ultricies ex vulputate ac. Ut id
-                                                    cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus ntincidunt eu.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Freshly Design</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae    egestas massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat.Ut id cursus tellus, non tempor quam. Morbi.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Fabolous Sound</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae    egestas massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat.Ut id cursus tellus, non tempor quam. Morbi.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Inteligent Bettery</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec
-                                                        massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat. Ut id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum metus, a ultricies ex vulputate ac. Ut id
-                                                        cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus nunc tincidunt eu interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus
-                                                        nec sem semper viverra. In lobortis egestas massa. Nam nec massa nisi. Suspendisse potenti. Quisque suscipit vulputate</p>
-                                                </div>
-                                            </div>
+                                
+                                
+                                <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">{{ comments.count }} Comments</h3>
+                                    {% for comment in comments %}
+                                    <div class="media mb-4">
+                                        
+                                        <div class="media-body">
+                                            <h6>{{ comment.user.username }} <small><i>{{ comment.timestamp }}</i></small></h6>
+                                            <p>{{ comment.text }}</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="contact11" role="tabpanel" aria-labelledby="contact-tab11">
-                                    <div class="desc-content mt-60">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Perfactly Done</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec
-                                                    massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpUt id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum meta ultricies ex vulputate ac. Ut id
-                                                    cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus ntincidunt eu.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Freshly Design</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae    egestas massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat.Ut id cursus tellus, non tempor quam. Morbi.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Fabolous Sound</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae    egestas massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat.Ut id cursus tellus, non tempor quam. Morbi.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="single-content mb-40">
-                                                    <h5 class="title">Inteligent Bettery</h5>
-                                                    <p>Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec
-                                                        massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat. Ut id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum metus, a ultricies ex vulputate ac. Ut id
-                                                        cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus nunc tincidunt eu interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus
-                                                        nec sem semper viverra. In lobortis egestas massa. Nam nec massa nisi. Suspendisse potenti. Quisque suscipit vulputate</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
+                            <div class="mb-5">
+                            {% if request.user.is_authenticated %}
                             </div>
                         </div>
+                    </div>
+                    <div class="bg-secondary rounded p-5">
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h3>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="message">Text *</label>
+                                <textarea name="text" id="message" cols="30" rows="5" class="form-control border-0"></textarea>
+                            </div>
+                            <div class="form-group mb-0">
+                                <input type="submit" value="Leave Comment" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">
+                            </div>
+                        </form>
+                    </div>
+                    {% else %}
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Login for leave comment</h3>
+                    {% endif %}
+
                     </div>
                 </div>
             </div>
@@ -542,7 +474,7 @@
                                     </div>
                                     <div class="col-xl-3 col-sm-6">
                                         <div class="all__product--link text-right">
-                                            <a class="all-link" href="shop-collection.html">Discover All Products<span
+                                            <a class="all-link" href="../shop-collection.html">Discover All Products<span
                                                     class="lnr lnr-arrow-right"></span></a>
                                         </div>
                                     </div>
@@ -557,13 +489,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__33.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__05.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__33.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__05.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -592,13 +524,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__34.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__14.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__34.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__14.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -627,13 +559,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__35.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__33.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__35.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__33.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -662,13 +594,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__36.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__34.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__36.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__34.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -697,13 +629,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__37.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__35.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__37.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__35.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -732,13 +664,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__38.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__33.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__38.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__33.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -767,13 +699,13 @@
                                     <div class="product__box">
                                         <div class="product__content--top">
                                             <span class="cate-name">SAMSUNG</span>
-                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="product-details.html">Wireless Audioing
+                                            <h6 class="product__title mine__shaft-color f-700 mb-0"><a href="../product-details3.html">Wireless Audioing
                                                     Systems Purple Degree</a></h6>
                                         </div>
                                         <div class="product__thumb">
-                                            <a href="product-details.html" class="img-wrapper">
-                                                <img class="img" src="../static/img/allproducts/products__thumb__35.jpg" alt="">
-                                                <img class="img secondary-img" src="../static/img/allproducts/products__thumb__33.jpg" alt="">
+                                            <a href="../product-details3.html" class="img-wrapper">
+                                                <img class="img" src="../../static/img/allproducts/products__thumb__35.jpg" alt="">
+                                                <img class="img secondary-img" src="../../static/img/allproducts/products__thumb__33.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="product__content--rating d-flex justify-content-between">
@@ -813,7 +745,7 @@
                         <div class="newsletter newsletter--box d-flex justify-content-between align-items-center pos-rel">
                             <div class="left d-flex justify-content-between align-items-center">
                                 <div class="newsletter__title">
-                                    <span class="notification--icon"><img src="../static/img/icon/notification-icon.png" alt="notification"></span>
+                                    <span class="notification--icon"><img src="../../static/img/icon/notification-icon.png" alt="notification"></span>
                                     <span class="notification__title--heading f-800 white-color">Subscribe for Join Us!</span>
                                 </div>
                                 <div class="newsletter--message d-none d-xl-block">
@@ -823,7 +755,7 @@
                             </div>
                             <form class="right newsletter--form pos-rel">
                                 <input class="newsletter--input" type="text" placeholder="Enter Your Email Address ...">
-                                <button class="btn newsletter--button" type="button"><img src="../static/img/icon/plan-icon.png" alt=""></button>
+                                <button class="btn newsletter--button" type="button"><img src="../../static/img/icon/plan-icon.png" alt=""></button>
                             </form>
                         </div>
                     </div>
@@ -923,7 +855,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="footer-payment--sponsors text-right">
-                            <a href="#" class="payment-images"><img src="../static/img/payment/payment-thumb.png" alt=""></a>
+                            <a href="#" class="payment-images"><img src="../../static/img/payment/payment-thumb.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -937,26 +869,27 @@
 
 
     <!-- JS here -->
-    <script src="../static/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/owl.carousel.min.js"></script>
-    <script src="../static/js/isotope.pkgd.min.js"></script>
-    <script src="../static/js/one-page-nav-min.js"></script>
-    <script src="../static/js/slick.min.js"></script>
-    <script src="../static/js/ajax-form.js"></script>
-    <script src="../static/js/wow.min.js"></script>
-    <script src="../static/js/jquery.scrollUp.min.js"></script>
-    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
-    <script src="../static/js/jquery.nice-select.min.js"></script>
-    <script src="../static/js/jquery.magnific-popup.min.js"></script>
-    <script src="../static/js/jquery.countdown.min.js"></script>
-    <script src="../static/js/jquery-ui-slider-range.js"></script>
-    <script src="../static/js/meanmenu.min.js"></script>
-    <script src="../static/js/Elemental.js"></script>
-    <script src="../static/js/plugins.js"></script>
-    <script src="../static/js/main.js"></script>
+    <script src="../../static/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/popper.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/owl.carousel.min.js"></script>
+    <script src="../../static/js/isotope.pkgd.min.js"></script>
+    <script src="../../static/js/one-page-nav-min.js"></script>
+    <script src="../../static/js/slick.min.js"></script>
+    <script src="../../static/js/ajax-form.js"></script>
+    <script src="../../static/js/wow.min.js"></script>
+    <script src="../../static/js/jquery.scrollUp.min.js"></script>
+    <script src="../../static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../static/js/jquery.nice-select.min.js"></script>
+    <script src="../../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../static/js/jquery.countdown.min.js"></script>
+    <script src="../../static/js/jquery-ui-slider-range.js"></script>
+    <script src="../../static/js/meanmenu.min.js"></script>
+    <script src="../../static/js/Elemental.js"></script>
+    <script src="../../static/js/plugins.js"></script>
+    <script src="../../static/js/main.js"></script>
 </body>
 
 </html>
+{% endblock %}
